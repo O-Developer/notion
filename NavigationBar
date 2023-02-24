@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Open Sans', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #d4d4d4;
+			text-decoration: none;
+			text-transform: capitalize;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #191919;
+		}
+
+		.border {
+			border: 1px solid #d4d4d4;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #2c2c2c;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-chess-king"></i> Home</a>
+    		<a id="education" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-file"></i> Education</a>
+    		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-copyright"></i> Business</a>
+    		<a id="fitness" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-heart"></i> Fitness</a>
+    		<a id="goals" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-circle-dot"></i> Goals</a>
+    		<a id="diary" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-hourglass"></i> Diary</a>
+    		<a id="calender" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar"></i> Calender</a>
+    		<a id="resources" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-bookmark"></i> Resources</a>
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Homepage-ee75e5201ddf4f2fb3818533d1fb8dc4?pvs=4", '_blank').focus();
+			else if (id == "education")
+				window.open("https://www.notion.so/Student-Dashboard-005f84ceaa5d499a99b698ba415faf09?pvs=4", '_blank').focus();
+      			else if (id == "business")
+       				 window.open("https://www.notion.so/Business-e4a0f9b6f66c4fc78fb12689a26f11fd?pvs=4", '_blank').focus();
+     			else if (id == "fitness")
+       				 window.open("https://www.notion.so/Fitness-8a46601708f7487c905592c823ba36d4?pvs=4", '_blank').focus();
+     			else if (id == "goals")
+				window.open("https://www.notion.so/Goals-1659e6d635594a549676dd6f47f48a01?pvs=4", '_blank').focus();
+      			else if (id == "diary")
+        				window.open("https://www.notion.so/Diary-afab196f4f19497995883d9dd5f503a0?pvs=4", '_blank').focus();
+     			else if (id == "calendar")
+				window.open("https://www.notion.so/Calendar-9ec582af46b24e86a0672c34324186a9?pvs=4", '_blank').focus();
+   			else if (id == "resources")
+				window.open("https://www.notion.so/Resources-aa3e0c1880544307a3142cce9971cfb3?pvs=4", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
